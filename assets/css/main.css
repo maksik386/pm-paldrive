@@ -954,7 +954,7 @@ ol {
   font-weight: 600;
   position: relative;
   line-height: 28px;
-  text-transform: capitalize;
+  
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -996,7 +996,7 @@ ol {
   position: relative;
   padding-right: 14px;
   margin-right: 14px;
-  text-transform: capitalize;
+  
 }
 
 .breadcrumbs .breadcrumb-nav li:after {
@@ -1074,7 +1074,7 @@ ol {
 .section-title h2 {
   font-size: 30px;
   line-height: 35px;
-  text-transform: capitalize;
+  
   position: relative;
   font-weight: 800;
   padding-bottom: 20px;
@@ -1287,7 +1287,7 @@ ol {
 
 .button .btn {
   display: inline-block;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
   padding: 13px 30px;
@@ -1626,9 +1626,20 @@ ol {
   border-bottom: 1px solid #eee;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .header .header-middle .d-xs-none {
     display: none;
+  }
+}
+
+.header .header-heading{
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1199px) {
+  .header .header-heading{
+    font-size: 0.8rem;
   }
 }
 
@@ -1665,11 +1676,11 @@ ol {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header .nav-hotline {
     display: none;
   }
-}
+} */
 
 .header .nav-hotline i {
   color: #081828;
@@ -1841,7 +1852,7 @@ ol {
 }
 
 .header .navbar-cart .cart-items .shopping-item .dropdown-cart-header span {
-  text-transform: capitalize;
+  
   color: #222;
   font-size: 14px;
   font-weight: 600;
@@ -1849,7 +1860,7 @@ ol {
 
 .header .navbar-cart .cart-items .shopping-item .dropdown-cart-header a {
   float: right;
-  text-transform: capitalize;
+  
   color: #222;
   font-size: 14px;
   font-weight: 600;
@@ -1969,7 +1980,7 @@ ol {
 }
 
 .header .navbar-cart .cart-items .shopping-item .bottom .total span {
-  text-transform: capitalize;
+  
   color: #222;
   font-size: 14px;
   font-weight: 600;
@@ -2397,7 +2408,7 @@ ol {
 
 .header .mega-category-menu .sub-category li .inner-sub-category li a {
   color: #081828;
-  text-transform: capitalize;
+  
   font-size: 14px;
   position: relative;
   width: 100%;
@@ -2414,7 +2425,7 @@ ol {
 
 .header .mega-category-menu .sub-category li a {
   color: #081828;
-  text-transform: capitalize;
+  
   font-size: 14px;
   position: relative;
   width: 100%;
@@ -2445,7 +2456,7 @@ ol {
 @media (max-width: 767px) {
   .header .nav-social {
     position: relative;
-    margin-top: -50px;
+    margin-top: -55px;
   }
 }
 
@@ -2675,7 +2686,7 @@ ol {
   font-weight: 600;
   transition: all 0.3s ease-out 0s;
   position: relative;
-  text-transform: capitalize;
+  
 }
 
 .navbar-nav .nav-item:hover .dd-menu::before {
@@ -2769,7 +2780,7 @@ ol {
   width: 100%;
   font-size: 14px;
   font-weight: 500;
-  text-transform: capitalize;
+  
   position: relative;
   z-index: 1;
   border-radius: 4px;
@@ -3921,7 +3932,7 @@ ol {
   font-size: 32px;
   margin-bottom: 25px;
   line-height: 45px;
-  text-transform: capitalize;
+  
   position: relative;
   font-weight: 700;
 }
@@ -3945,7 +3956,7 @@ ol {
   margin-top: 40px;
   margin-bottom: 8px;
   line-height: 45px;
-  text-transform: capitalize;
+  
   position: relative;
   font-weight: 600;
 }
@@ -4590,7 +4601,7 @@ blockquote span {
   margin-bottom: 30px !important;
   position: relative;
   z-index: 1;
-  text-transform: capitalize;
+  
 }
 
 .post-comments .comments-list li {
@@ -4719,7 +4730,7 @@ blockquote span {
   margin-bottom: 30px !important;
   position: relative;
   z-index: 1;
-  text-transform: capitalize;
+  
 }
 
 .comment-form form .form-box {
@@ -4981,7 +4992,7 @@ blockquote span {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 7px 15px;
-  text-transform: capitalize;
+  
   font-size: 13px;
   font-weight: 400;
   background: #0167F3;
@@ -7378,7 +7389,7 @@ blockquote span {
   color: #fff;
   display: inline-block;
   margin-top: 30px;
-  text-transform: capitalize;
+  
 }
 
 .contact-form-head .contact-inner-title .call-back i {
