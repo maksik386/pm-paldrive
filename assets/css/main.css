@@ -2945,8 +2945,6 @@ ol {
     content: "";
     height: 100%;
     width: 100%;
-    background-color: #fff;
-    opacity: 0.6;
   }
 }
 
@@ -2965,18 +2963,17 @@ ol {
 }
 
 .hero-area .hero-slider .single-slider .content {
-  padding: 20px 365px 20px 50px;
+  padding: 40px;
   position: absolute;
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0 230px 50px 50px;
+  background: rgba(255,255,255,0.8);
 }
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .hero-area .hero-slider .single-slider .content {
-    padding-right: 300px;
-  }
+.hero-area .hero-slider p {
+  color: #000;
 }
 
 @media (max-width: 767px) {
@@ -3030,6 +3027,24 @@ ol {
   margin-top: 20px;
 }
 
+@media (max-width: 1199px) {
+  .hero-area .hero-slider .single-slider .content {
+    margin: 0 210px 50px 50px;
+}
+.hero-area .hero-slider .single-slider .content h2 {
+  font-size: 20px;
+}
+  .hero-area .hero-slider .single-slider .content p {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+.hero-area .hero-slider .single-slider .content {
+  margin: 0 20px;
+}
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-area .hero-slider .single-slider .content p {
     margin-top: 10px;
@@ -3054,7 +3069,7 @@ ol {
   margin-right: 12px;
   font-size: 16px;
   font-weight: 600;
-  color: #8a8a8a;
+  color: #000;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3335,7 +3350,7 @@ ol {
   position: absolute;
   top: 0;
   padding: 5px 10px;
-  left: 0;
+  right: 0;
   z-index: 22;
 }
 
@@ -3368,7 +3383,7 @@ ol {
   padding: 12px 20px;
   font-size: 13px;
   font-weight: 600;
-  width: 140px;
+  /* width: 140px; */
 }
 
 .single-product .product-image .button .btn i {
