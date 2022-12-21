@@ -1303,6 +1303,21 @@ ol {
   overflow: hidden;
 }
 
+.button .btn2 {
+  background-color: rgb(194, 193, 193);
+}
+.button .btn3 {
+  font-size: 130%;
+  padding: 20px 40px;
+}
+.button .btn4 {
+  background-color:#435a70;
+  padding: 15px 35px;
+}
+.button .btn.btn4:hover {
+  background-color: #0167F3;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .button .btn {
     padding: 12px 25px;
@@ -7706,6 +7721,16 @@ blockquote span {
   }
 }
 
+.footer .footer-top .footer-logo {
+  color: #fff;
+  font-size: 110%;
+}
+.footer .footer-top .footer-logo a {
+  color: #b3b3b3;
+}
+.footer .footer-top .footer-logo a:hover {
+  color: #fff;
+}
 .footer .footer-top .footer-logo a img {
   width: 200px;
 }
