@@ -35,9 +35,9 @@ Index Of css
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
 :root {
-  --main-bg-color: #dd1b1b;
-  --main-link-color: #dd1b1b;
-  --second-bg-color: #081828;
+  --main-bg-color: #d22e30;
+  --main-link-color: #d22e30;
+  --second-bg-color: #000000;
   --main-text-color: #888;
   --sale-tag-bg: #009966
 }
@@ -976,7 +976,7 @@ ol {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .breadcrumbs .breadcrumbs-content .page-title {
     font-size: 16px;
     text-align: center;
@@ -996,7 +996,7 @@ ol {
   text-align: right;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .breadcrumbs .breadcrumb-nav {
     text-align: center;
     margin-top: 15px;
@@ -3366,6 +3366,10 @@ ol {
 .single-product .product-image {
   overflow: hidden;
   position: relative;
+}
+.product-image-vertikal {
+  position: sticky;
+  top: 20px;
 }
 
 .single-product .product-image .sale-tag {
@@ -6081,6 +6085,9 @@ blockquote span {
 }
 
 @media (max-width: 767px) {
+  .product-grids-max767 {
+    display: none;
+  }
   .product-grids .product-grid-topbar .nav {
     float: none;
     text-align: left;
@@ -6108,6 +6115,11 @@ blockquote span {
 }
 
 /* Product Sidebar */
+.filter-block {
+  position: sticky;
+  top: 20px;
+}
+
 .product-sidebar .single-widget {
   background-color: #fff;
   padding: 30px;
@@ -6128,6 +6140,11 @@ blockquote span {
   color: #232323;
   font-size: 15px;
   font-weight: 500;
+}
+
+.product-sidebar .single-widget .list li a.active {
+  font-weight: bold;
+  color: var(--main-link-color);
 }
 
 .product-sidebar .single-widget.search form {
@@ -6295,6 +6312,34 @@ blockquote span {
 
 .product-sidebar .single-widget.banner a img {
   width: 100%;
+}
+
+@media (max-width: 991px) {
+  .product-sidebar .single-widget {
+    display: none;
+  }
+}
+
+.product-sidebar-accordion .list li a{
+  display: block;
+  color: #000;
+  padding: 15px 0;
+  font-size: 110%;
+}
+.product-sidebar-accordion ul li a.active {
+  font-weight: bold;
+  color: var(--main-link-color);
+}
+@media (min-width: 992px) {
+  .product-sidebar-accordion {
+    display: none;
+  }
+}
+
+.accordion-button.collapsed {
+    color: #fff;
+    background-color: var(--main-bg-color);
+    border-radius: 4px 4px 0 0;
 }
 
 /*======================================
