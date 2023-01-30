@@ -6088,6 +6088,9 @@ blockquote span {
   .product-grids-max767 {
     display: none;
   }
+  .tab-pane.tab-pane-gorizont {
+    display: none;
+  }
   .product-grids .product-grid-topbar .nav {
     float: none;
     text-align: left;
