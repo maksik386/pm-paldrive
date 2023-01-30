@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
     <link rel="stylesheet" href="assets/css/tiny-slider.css" />
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <!-- fancybox -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
@@ -171,24 +173,48 @@
                             <main id="gallery">
                                 <div class="main-img swiper mySwiper2">
                                     <div class="swiper-wrapper">
-                                        <img class="swiper-slide" src="assets/images/product-details/slider-bg1.jpg" />
-                                        <img class="swiper-slide" src="assets/images/product-details/slider-bg2.jpg" />
-                                        <img class="swiper-slide" src="assets/images/product-details/slider-bg1.jpg" />
-                                        <img class="swiper-slide" src="assets/images/product-details/slider-bg2.jpg" />
-                                        <img class="swiper-slide" src="assets/images/product-details/slider-bg1.jpg" />
-                                        <img class="swiper-slide" src="assets/images/product-details/slider-bg2.jpg" />
+                                        <a class="swiper-slide" href="assets/images/product-details/slider-bg1.jpg"
+                                            data-fancybox="gallery" data-caption="Описание фотографии">
+                                            <img src="assets/images/product-details/slider-bg1.jpg" />
+                                        </a>
+                                        <a class="swiper-slide" href="assets/images/product-details/slider-bg2.jpg"
+                                            data-fancybox="gallery" data-caption="Описание фотографии">
+                                            <img src="assets/images/product-details/slider-bg2.jpg" />
+                                        </a>
+                                        <a class="swiper-slide" href="assets/images/product-details/slider-bg1.jpg"
+                                            data-fancybox="gallery" data-caption="Описание фотографии">
+                                            <img src="assets/images/product-details/slider-bg1.jpg" />
+                                        </a>
+                                        <a class="swiper-slide" href="assets/images/product-details/slider-bg2.jpg"
+                                            data-fancybox="gallery" data-caption="Описание фотографии">
+                                            <img src="assets/images/product-details/slider-bg2.jpg" />
+                                        </a>
+                                        <a class="swiper-slide" href="assets/images/product-details/slider-bg1.jpg"
+                                            data-fancybox="gallery" data-caption="Описание фотографии">
+                                            <img src="assets/images/product-details/slider-bg1.jpg" />
+                                        </a>
+                                        <a class="swiper-slide" href="assets/images/product-details/slider-bg2.jpg"
+                                            data-fancybox="gallery" data-caption="Описание фотографии">
+                                            <img src="assets/images/product-details/slider-bg2.jpg" />
+                                        </a>
                                     </div>
                                     <div class="swiper-button-next"></div>
                                     <div class="swiper-button-prev"></div>
                                 </div>
                                 <div class="swiper mySwiper">
                                     <div class="swiper-wrapper">
-                                        <img src="assets/images/product-details/slider-bg1.jpg" class="swiper-slide" alt="#">
-                                        <img src="assets/images/product-details/slider-bg2.jpg" class="swiper-slide" alt="#">
-                                        <img src="assets/images/product-details/slider-bg1.jpg" class="swiper-slide" alt="#">
-                                        <img src="assets/images/product-details/slider-bg2.jpg" class="swiper-slide" alt="#">
-                                        <img src="assets/images/product-details/slider-bg1.jpg" class="swiper-slide" alt="#">
-                                        <img src="assets/images/product-details/slider-bg2.jpg" class="swiper-slide" alt="#">
+                                        <img src="assets/images/product-details/slider-bg1.jpg" class="swiper-slide"
+                                            alt="#">
+                                        <img src="assets/images/product-details/slider-bg2.jpg" class="swiper-slide"
+                                            alt="#">
+                                        <img src="assets/images/product-details/slider-bg1.jpg" class="swiper-slide"
+                                            alt="#">
+                                        <img src="assets/images/product-details/slider-bg2.jpg" class="swiper-slide"
+                                            alt="#">
+                                        <img src="assets/images/product-details/slider-bg1.jpg" class="swiper-slide"
+                                            alt="#">
+                                        <img src="assets/images/product-details/slider-bg2.jpg" class="swiper-slide"
+                                            alt="#">
                                     </div>
                                 </div>
                             </main>
@@ -527,10 +553,14 @@
     </a>
 
     <!-- ========================= JS here ========================= -->
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/tiny-slider.js"></script>
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <!-- fancybox -->
+    <script src="assets/js/jquery.fancybox.min.js"></script>
 
     <!-- Swiper JS -->
     <script src="assets/js/swiper-bundle.min.js"></script>
@@ -538,14 +568,12 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-            loop: true,
             spaceBetween: 10,
             slidesPerView: 4,
             freeMode: true,
             watchSlidesProgress: true,
         });
         var swiper2 = new Swiper(".mySwiper2", {
-            loop: true,
             spaceBetween: 10,
             navigation: {
                 nextEl: ".swiper-button-next",
