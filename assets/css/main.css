@@ -4107,7 +4107,7 @@ ol {
 
 @media (max-width: 767px) {
   .accordion-item .accordion-button .title {
-    font-size: 14px;
+    font-size: 17px;
   }
 }
 
@@ -6320,18 +6320,18 @@ blockquote span {
   }
 }
 
-.product-sidebar-accordion .list li a{
+.accordion-item .list li a{
   display: block;
   color: #000;
   padding: 15px 0;
   font-size: 110%;
 }
-.product-sidebar-accordion ul li a.active {
+.accordion-item ul li a.active {
   font-weight: bold;
   color: var(--main-link-color);
 }
 @media (min-width: 992px) {
-  .product-sidebar-accordion {
+  .accordion {
     display: none;
   }
 }
