@@ -5237,6 +5237,13 @@ blockquote span {
 .item-details .product-info {
   padding-left: 30px;
 }
+.product-info__in-stock {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 15px;
+  background: var(--sale-tag-bg);
+  color: #fff;
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .item-details .product-info {
@@ -5280,10 +5287,10 @@ blockquote span {
 }
 
 .item-details .product-info .price {
-  color: var(--second-bg-color);
+  color: var(--main-link-color);
   display: block;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: bold;
   margin-bottom: 15px;
 }
 
