@@ -6334,7 +6334,7 @@ blockquote span {
   color: var(--main-link-color);
 }
 @media (min-width: 992px) {
-  .accordion {
+  .accordion-menu {
     display: none;
   }
 }
