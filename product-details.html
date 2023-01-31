@@ -635,8 +635,8 @@
                             </div>
                         </div>
                         <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -775,8 +775,8 @@
         });
 
         var swiper = new Swiper(".mySwiper-over-machines", {
-            slidesPerView: 3,
-            spaceBetween: 30,
+            slidesPerView: 1,
+            spaceBetween: 10,
             slidesPerGroup: 3,
             loopFillGroupWithBlank: true,
             pagination: {
@@ -787,6 +787,26 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            breakpoints: {
+                // when window width is >= 480px
+                480: {
+                slidesPerView: 1,
+                spaceBetween: 10
+                },
+                // when window width is >= 640px
+                767: {
+                slidesPerView: 2,
+                spaceBetween: 10
+                },
+                992: {
+                slidesPerView: 3,
+                spaceBetween: 10
+                },
+                1400: {
+                slidesPerView: 4,
+                spaceBetween: 10
+                },
+            }
         });
     </script>
 

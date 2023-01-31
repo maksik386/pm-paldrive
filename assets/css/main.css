@@ -8264,21 +8264,6 @@ blockquote span {
   }
 }
 
-.other-machines {
-  padding-top: 20px;
-}
-.other-machines .single-product {
-  border: 1px solid #eee;
-  border-radius: 4px;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  margin-top: 30px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  padding: 8px;
-  background: #fff;
-}
-
 /*swiper*/
 .main-img {
   margin-bottom: 1em;
@@ -8336,4 +8321,29 @@ blockquote span {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.other-machines {
+  padding-top: 20px;
+}
+.other-machines .single-product {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin-top: 30px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 8px;
+  background: #fff;
+}
+.other-machines .swiper {
+  padding-bottom: 50px;
+}
+.other-machines .swiper-button-next, .other-machines .swiper-button-prev {
+  color: var(--main-link-color);
+}
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: var(--main-bg-color);
 }
